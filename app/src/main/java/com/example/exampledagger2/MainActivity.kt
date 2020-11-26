@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //Attribute
     private val melee: Melee = Melee()
     private val range: Range = Range()
 
