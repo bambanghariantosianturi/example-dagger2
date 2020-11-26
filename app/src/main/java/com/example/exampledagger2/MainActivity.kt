@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //TODO create code here
+        //TODO create code here bams
         click_me.setOnClickListener {
             val getFight = melee.setEquip() + " and " + range.setEquip()
             report.text = getFight
