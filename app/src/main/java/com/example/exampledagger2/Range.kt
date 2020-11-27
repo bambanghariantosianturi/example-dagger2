@@ -1,10 +1,12 @@
 package com.example.exampledagger2
 
-class Range {
+import javax.inject.Inject
 
-    private val weapon : Weapon = Weapon()
+class Range @Inject constructor() {
 
-    fun setEquip() : String {
-        return "Hero Range Fight Use " + weapon.arrow()
+//    private val weapon : Weapon = Weapon()
+
+    fun setEquip(): String {
+        return "Hero Range Fight Use Arrow"
     }
 }

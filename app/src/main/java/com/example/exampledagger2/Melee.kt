@@ -1,10 +1,12 @@
 package com.example.exampledagger2
 
-class Melee {
+import javax.inject.Inject
 
-    private val weapon : Weapon = Weapon()
+class Melee @Inject constructor() {
 
-    fun setEquip() : String {
-        return "Hero Melee Fight Use " + weapon.sword()
+//    private val weapon : Weapon = Weapon()
+
+    fun setEquip(): String {
+        return "Hero Melee Fight Use Sword"
     }
 }
