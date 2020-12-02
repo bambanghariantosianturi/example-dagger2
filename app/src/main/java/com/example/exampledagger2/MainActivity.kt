@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        DaggerHeroComponent
+                .builder()
+                .build()
+                .inject(this)
+
         click_me.setOnClickListener {
             val getFight = melee.setEquip() + " and " + range.setEquip()
             report.text = getFight
