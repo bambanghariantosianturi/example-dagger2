@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        /**
+         * Inject this main to client
+         */
         DaggerHeroComponent
                 .builder()
                 .build()
