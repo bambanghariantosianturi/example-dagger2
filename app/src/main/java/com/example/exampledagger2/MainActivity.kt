@@ -7,9 +7,11 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    //Attribute use anotation inject
+    //commend instance object DI not need that
 //    private val melee: Melee = Melee()
 //    private val range: Range = Range()
+
+    //Attribute use anotation inject
     @Inject
     lateinit var melee : Melee
 
