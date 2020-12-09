@@ -7,16 +7,23 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    //commend instance object DI not need that
+    /**
+     * this instance is not required in DI
+     */
 //    private val melee: Melee = Melee()
 //    private val range: Range = Range()
 
-    //Attribute use anotation inject
+    /**
+     * Inject class only create variable
+     */
     @Inject
     lateinit var melee : Melee
 
     @Inject
     lateinit var range: Range
+
+    private var width : Int = 0
+    private var height : Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,5 +38,9 @@ class MainActivity : AppCompatActivity() {
             val getFight = melee.setEquip() + " and " + range.setEquip()
             report.text = getFight
         }
+    }
+
+    fun getArea(): Int {
+        return width * height
     }
 }
