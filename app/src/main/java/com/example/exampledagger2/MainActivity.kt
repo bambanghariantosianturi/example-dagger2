@@ -22,9 +22,6 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var range: Range
 
-    private var width : Int = 0
-    private var height : Int = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,9 +35,5 @@ class MainActivity : AppCompatActivity() {
             val getFight = melee.setEquip() + " and " + range.setEquip()
             report.text = getFight
         }
-    }
-
-    fun getArea(): Int {
-        return width * height
     }
 }
