@@ -7,6 +7,6 @@ class Range @Inject constructor(private val weapon: Weapon) {
 //    private val weapon : Weapon = Weapon()
 
     fun setEquip(): String {
-        return "Hero Range Fight Use "+weapon.arrow()
+        return "Hero Range Fight Use "+ weapon.arrow()
     }
 }
